@@ -37,7 +37,7 @@
                     <container>
                         <containerId>tomcat7x</containerId>
                         <zipUrlInstaller>
-                            <url>http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.25/bin/apache-tomcat-7.0.25.zip
+                            <url>http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.50/bin/apache-tomcat-7.0.50.zip
                             </url>
                         </zipUrlInstaller>
                     </container>
@@ -142,12 +142,6 @@
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-asm</artifactId>
-            <version>${spring.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
             <version>${spring.version}</version>
             <scope>compile</scope>
@@ -202,6 +196,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
             <version>${spring.security.version}</version>
         </dependency>
@@ -212,8 +211,8 @@
         </dependency>
     </dependencies>
     <properties>
-        <spring.version>3.1.0.RELEASE</spring.version>
-        <spring.security.version>3.1.0.RELEASE</spring.security.version>
+        <spring.version>3.2.8.RELEASE</spring.version>
+        <spring.security.version>3.2.3.RELEASE</spring.security.version>
         <m2eclipse.wtp.contextRoot>calendar</m2eclipse.wtp.contextRoot>
         <project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
     </properties>
